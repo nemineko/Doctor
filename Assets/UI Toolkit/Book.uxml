@@ -1,7 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/bookshelf.uss?fileID=7433441132597879392&amp;guid=40da42c3bff315a49bfc2085e6141451&amp;type=3#bookshelf" />
-    <ui:VisualElement name="BookShelf" class="BookShelf" style="position: relative; width: 75%; left: auto; flex-shrink: 1; flex-grow: 1; background-color: rgb(230, 131, 66); height: 450px; max-height: 80%; flex-direction: column-reverse; bottom: auto; top: auto;">
-        <ui:VisualElement name="BookArea" style="height: 45%; position: relative; width: 90%; top: auto; left: auto; background-color: rgba(0, 0, 0, 0.23); margin-top: 2.5%; margin-bottom: 5%; margin-right: auto; margin-left: auto; flex-direction: column; flex-shrink: 1; flex-grow: 0;" />
-        <ui:VisualElement name="BookArea" style="height: 45%; flex-direction: column; width: 90%; background-color: rgba(0, 0, 0, 0.15); top: auto; margin-bottom: 2.5%; margin-top: 5%; margin-right: auto; margin-left: auto; flex-shrink: 1; flex-grow: 0;" />
-    </ui:VisualElement>
-</ui:UXML>

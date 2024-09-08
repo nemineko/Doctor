@@ -7,14 +7,22 @@ using TMPro;
 
 
 
-public class PopupManager
+public class PopupManager : MonoBehaviour
 {
     public GameObject popupWindow;   // ポップアップウィンドウのプレハブ
-    public Text popupText;　　　　　 // ポップアップウィンドウのテキスト
+    public TextMeshProUGUI popupText;　　　　　 // ポップアップウィンドウのテキスト
     public List<Button> pageButtons; // ページめくりボタン
     private List<string> pages;      // スクリプタブルオブジェクトのテキスト
     private int currentPageIndex;    // 現在のページ番号
 
+    void Update()
+    {
+        // 右クリックでポップアップを非表示にする処理
+        if (Input.GetMouseButtonDown(1) && popupWindow.activeSelf)
+        {
+            ClosePopup();
+        }
+    }
     public void ShowPopup(Book book)
     {
         pages = book.pages;

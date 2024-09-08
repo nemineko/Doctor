@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: decfbe6210e379e47b151235bae2d57c
+guid: 0274e1da2cba56646b36a4eab15b893b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - bookShelfTransform: {instanceID: 0}
-  - bookPrefab: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

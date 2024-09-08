@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a218e91010a42a4e9967e6d855f1906, type: 3}
+  m_Name: SousaSetsumei
+  m_EditorClassIdentifier: 
+  coverImage: {fileID: 21300000, guid: 7a8a708ac36cb4f47b772ff7e59cd4bf, type: 3}
+  pages:
+  - "\u8AAC\u660E\u66F8"
+  - "\u672C\u306F\u30C9\u30E9\u30C3\u30B0\u30A2\u30F3\u30C9\u30C9\u30ED\u30C3\u30D7\u3067\u304D\u307E\u3059"
+  - "\u30C9\u30ED\u30C3\u30D7\u3067\u304D\u308B\u5834\u6240\u306B\u884C\u304F\u3068\u3001\u672C\u304C\u5927\u304D\u304F\u306A\u308A\u307E\u3059"
+  - "\u53F3\u30AF\u30EA\u30C3\u30AF\u3067\u3053\u306E\u753B\u9762\u304C\u6D88\u3048\u307E\u3059"
+  treatment:
+  - "\u6CBB\u7642\u6CD51"
+  - "\u6CBB\u7642\u6CD52"
+  isSpecial: 1
