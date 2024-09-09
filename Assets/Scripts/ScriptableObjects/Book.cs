@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Book", menuName = "ScriptableObjects/Book", order = 1)]
 public class Book : ScriptableObject
 {
+    public int bookID;         // 本のID
     public Sprite coverImage;  // 背表紙の画像
     public List<string> pages; // ページごとのテキストを追加
     public List<string> treatment; // 治療法一覧

@@ -39,6 +39,10 @@ public class BookShelf : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             RectTransform targetArea = book.isSpecial ? bookArea1 : bookArea2; // 本を置くエリアを決定
             GameObject bookObject = Instantiate(bookPrefab, targetArea);
+            int bookID = book.bookID;
+            float bookWidth = bookObject.transform.GetComponent<RectTransform>().rect.width;
+            float bookX = bookWidth * bookID;
+            bookObject.transform.Translate(bookX, 0f, 10f);
             BookPrefab bookPrefabScript = bookObject.GetComponent<BookPrefab>();
             bookPrefabScript.Initialize(book);
             bookObject.GetComponent<Button>().onClick.AddListener(() => popupManager.ShowPopup(book));

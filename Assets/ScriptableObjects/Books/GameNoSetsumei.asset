@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a218e91010a42a4e9967e6d855f1906, type: 3}
   m_Name: GameNoSetsumei
   m_EditorClassIdentifier: 
+  bookID: 1
   coverImage: {fileID: 21300000, guid: 488329146f4493944a2b2069e22347a9, type: 3}
   pages:
   - "\u3069\u3093\u306A\u30B2\u30FC\u30E0\u3092\u4F5C\u3063\u3066\u3044\u308B\u306E\u304B"

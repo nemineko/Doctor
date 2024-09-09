@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a218e91010a42a4e9967e6d855f1906, type: 3}
   m_Name: SousaSetsumei
   m_EditorClassIdentifier: 
+  bookID: 2
   coverImage: {fileID: 21300000, guid: 7a8a708ac36cb4f47b772ff7e59cd4bf, type: 3}
   pages:
   - "\u8AAC\u660E\u66F8"
