@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using Unity.VisualScripting;
-
 
 
 public class BookShelf : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
