@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Diagnosis/Stylesheet_Diagnosis.uss?fileID=7433441132597879392&amp;guid=e31c9b4e4fe45134c8c77bc6aae923bd&amp;type=3#Stylesheet_Diagnosis"/>
+    <ui:VisualElement name="background" class="bg"/>
+    <ui:VisualElement name="doctorPortraitArea" class="doctor-portrait-area">
+        <ui:Image name="doctorPortraitImage" source="project://database/Assets/Sprites/Tachie/dansei_16_a.png?fileID=21300000&amp;guid=a5eac938fe54711459cf23e8a197b894&amp;type=3#dansei_16_a" class="doctor-portrait-image"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="diagnosisPanel" class="diagnosis-panel">
+        <ui:VisualElement name="stockArea" class="stock-area"/>
+        <ui:VisualElement name="treatmentArea" class="treatment-area">
+            <ui:Image name="treatmentIcon" source="project://database/Assets/Sprites/Tachie/animal_01_a.png?fileID=21300000&amp;guid=05b843d8e63dc8c4caa49b26076d146b&amp;type=3#animal_01_a" class="treatment-icon"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="questionArea" class="question-area"/>
+    </ui:VisualElement>
+    <ui:Image name="referenceShelf" class="reference-shelf">
+        <ui:VisualElement name="referenceSlots" class="reference-slots"/>
+    </ui:Image>
+    <ui:VisualElement name="dialogLog" class="dialog-log"/>
+</ui:UXML>

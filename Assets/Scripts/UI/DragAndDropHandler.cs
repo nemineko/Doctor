@@ -12,18 +12,18 @@ public class DragAndDropHandler : MonoBehaviour, IBeginDragHandler, IDragHandler
     private RectTransform stockArea; // 本のストックエリア
     private RectTransform treatmentArea; // 治療エリア
     private PopupManager popupManager; // ポップアップマネージャー
-    private OperationManager operationManager; // プレイヤー操作エリア
+    //private OperationManager operationManager; // プレイヤー操作エリア
     private Book book; // 選択された本
 
     // BookShelfからDragAndDropHandlerに参照を渡す
     public void Initialize(PopupManager popupManager, RectTransform stockArea, RectTransform treatmentArea,
-        RectTransform bookshelfArea, OperationManager operation, Book theBook)
+        RectTransform bookshelfArea, Book theBook)
     {
         this.popupManager = popupManager;
         this.stockArea = stockArea;
         this.treatmentArea = treatmentArea;
         this.bookshelfArea = bookshelfArea;
-        this.operationManager = operation;
+        //this.operationManager = operation;
         this.book = theBook;
         print("book : " + book);
     }
@@ -87,8 +87,8 @@ public class DragAndDropHandler : MonoBehaviour, IBeginDragHandler, IDragHandler
         }
         else if (RectTransformUtility.RectangleContainsScreenPoint(treatmentArea, Input.mousePosition))
         {
-            ChangeParent(stockArea);
-            operationManager.ShowParts(book);
+            ChangeParent(treatmentArea);
+            //operationManager.ShowParts(book);
         }
         else
         {

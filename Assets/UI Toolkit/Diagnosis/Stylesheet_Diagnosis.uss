@@ -1,0 +1,192 @@
+/* 立ち絵 */
+.doctor-portrait-area {
+    flex-grow: 1;
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 28%;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.doctor-portrait-image {
+    width: auto;
+    scale: 2 2;
+    transform-origin: top;
+}
+
+/* 右側パネル */
+.diagnosis-panel {
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    align-self: flex-end;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    background-color: rgb(255, 255, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-x: right 0;
+    background-position-y: bottom 0;
+    background-size: 50% 100%;
+    -unity-slice-type: sliced;
+}
+
+/* 下：ストック */
+.stock-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 25%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(153, 153, 153);
+    -unity-background-image-tint-color: rgb(255, 255, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-x: right 0;
+    background-position-y: bottom 0%;
+    background-size: 100% 30%;
+}
+
+/* 上：処置（猫アイコン等） */
+.treatment-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    height: 30%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(153, 153, 153);
+    -unity-background-image-tint-color: rgb(255, 255, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-x: right 0;
+    background-position-y: bottom 0%;
+    background-size: 100% 30%;
+}
+
+.question-area {
+    position: relative;
+    top: 3%;
+
+    height: 42%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(153, 153, 153);
+    -unity-background-image-tint-color: rgb(255, 255, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-x: right 0;
+    background-position-y: bottom 0%;
+    background-size: 100% 30%;
+}
+
+/* 本棚 */
+/* 棚の基本（位置と幅はあなたの値に合わせて） */
+.reference-shelf {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+
+    width: 50%;
+    overflow: hidden; /* はみ出しを隠す */
+}
+
+/* 折りたたみ：見えてる高さ（ここが「一部だけ」） */
+.reference-shelf.is-collapsed {
+    height: 40px; /* ← 取っ手として見せたい高さ */
+}
+
+/* 展開：全部見える高さ（本の最大段数に合わせる or C#で動的） */
+.reference-shelf.is-expanded {
+    height: 260px; /* ← とりあえず固定。後で自動計算にできます */
+}
+
+/* 高さ変化を滑らかにする */
+.reference-shelf {
+    transition-property: height;
+    transition-duration: 0.18s;
+    transition-timing-function: ease-out;
+}
+
+/* 棚の中で本を並べるエリア */
+.reference-slots {
+    /* 内側濃さ調整 */
+    background-color: rgba(0, 0, 0, 0.35); 
+
+
+    display: flex;
+    flex-direction: row;
+
+    /* 段を増やす */
+    flex-wrap: wrap;
+
+    /* 上から順に並べる */
+    align-content: flex-start;
+
+    gap: 10px;                 /* ぎちぎち */
+    top: 20px;             /* ぎちぎち */
+}
+
+/* 1冊分 */
+.book-item {
+    width: 60px;
+    height: 200px;
+}
+
+/* 背表紙画像 */
+.book-cover {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* ダイアログ */
+.dialog-log {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 75%;
+    flex-grow: 1;
+}
+
+    /* 画面全体の背景 */
+.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    /* 背景画像 */
+    background-image: url("project://database/Assets/Sprites/BackGround/A-room-full-of-books1.jpg?fileID=2800000&guid=2a4c2a46b0fa51a4cbf906136a96d983&type=3#A-room-full-of-books1");
+
+    /* 画面に合わせて表示方法（お好みで選んでOK） */
+    -unity-background-scale-mode: scale-and-crop; /* 画面いっぱい（はみ出してトリミング） */
+    /* -unity-background-scale-mode: scale-to-fit; */ /* 全体表示（余白が出る） */
+
+    /* 重要：背景がクリックを邪魔しないようにする */
+    picking-mode: ignore;
+}

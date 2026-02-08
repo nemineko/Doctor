@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Diagnosis/Stylesheet_BookItem.uss?fileID=7433441132597879392&amp;guid=a593101917b63db458c21f60ba825e3c&amp;type=3#Stylesheet_BookItem"/>
+    <ui:VisualElement focusable="true" class="book-item">
+        <ui:Image name="coverImage" source="project://database/Assets/Sprites/Sebyoushi/sebyoushi_1.jpg?fileID=2800000&amp;guid=488329146f4493944a2b2069e22347a9&amp;type=3#sebyoushi_1" class="book-cover"/>
+    </ui:VisualElement>
+</ui:UXML>
